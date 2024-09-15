@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo sobre formulários</title>
+</head>
+
+<body>
+    <fieldset style="width: 600px;">
+        <legend>Cadastro</legend>
+        <!--Tag tipo fieldset gera uma caixa entorno do que estiver entre as chaves da tag-->
+        <!--Tag legend poded ser utilizada para dar um nome/-->
+        <!--Modelo de formulário com campos de nome, idade e senha-->
+        <form name="cadastro" onsubmit="alert('formulário enviado')" method="post" action="#">
+            Nome <input type="text" name="name" /><br>
+            Idade: <input type="number" name="name" /><br>
+            Senha: <input type="password" name="name" /><br>
+            <button type="submit">Enviar</button>
+            <!-- Method get aparece as credenciais, independente de qual campo, dentro da url; Já a Method post não apresenta esta função-->
+        </form>
+
+    </fieldset>
+    <fieldset style="width: 600px;">
+        <form>
+            <label>Digite texto: </label><input type="text"><br>
+            <label>Digite número: </label><input type="number" min="0"><br>
+            <!-- imput type="text" ou "number" cria um campo de texto ou numero para ser digitado, no caso da tag min junto do input number defime o valor mínimo a ser digitado, ou a tag max para definir o máximo. A tag step pode ser utilizada para subir de numeração, por exemplo de 2 em 2, 5 em 5 etc-->
+            <label>Botão: </label><input type="button" value="Enviar"><br>
+            <label>Range: </label><input type="range" min="0" max="100" value="90"><br>
+            <!--Range cria um campo de scroll, podendo escolher entre valores máximos e minimos-->
+            <label>Color: </label><input type="color"><br>
+            <!-- Color cria uma caixa de selção de cores, cada navegador tem sua caixa de forma diferente-->
+            <label>E-mail: </label><input type="email"><br>
+            <!--Caso não tenha @ no email, irá aparecer um erro com uma mensagem padrão do navegador, porém também podemos fazer a nossa própria -->
+            <label>Url: </label><input type="url"><br>
+            <!--Caso não tenha o formato adequado de URL, irá aparecer um erro com uma mensagem padrão do navegador, porém também podemos fazer a nossa própria -->
+            <label>Data: </label><input type="date"><br>
+            <label>Semana: </label><input type="week"><br>
+            <label>Mês: </label><input type="month"><br>
+            <!-- Variáveis para selecionar/armazenar datas, seus estilos também diferem de diferentes navegadores-->
+            <label>Button: </label><input type="submit" value="Enviar"><br>
+            <label>Checkbox: </label><input type="checkbox"><input type="checkbox"><input type="checkbox"><br>
+            <label>Radio: </label><input type="radio" name="Teste" value="ok">ok<br>
+            <p>Boa</p>
+            <input type="radio" name="Teste" value="saudar">Tarde<br>
+            <input type="radio" name="Teste" value="saudar">Noite<br>
+            <!--Checkbox aparece uma caixa de seleção em formatado de um quadrado; Radio aparece uma caixa de seleção no formato circular; Ambas podem ser adicionadas várias vezes -->
+            <!--Radio geralmente é utilizada para fazer seleções únicas e para isso a parte "name" deve conter a mesma nomeação que as autras em tipo Radio, podendo fazer escolhas de sim ou não únicas e impossibilitando a multipla escolha-->
+            <!-- Também  podemos usar disabled antes de name para mostrar que tal opção está indisponível-->
+            <label>Hidden: </label><input type="hidden"><br>
+            <label>Aquivos: </label><input type="file"><br>
+            <!-- Hidden gera uma caixa de texto invisível porém ela também é enviada juntamente ao formulário, também há diversas utilidades-->
+            <!-- Files é para fazer escolha de arquivos, principalmente para uploads em sites-->
+            <label>Pesquisa: </label><input type="search"><br>
+
+        </form>
+    </fieldset>
+    <fieldset style="width: 600px;">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hzOI__iGL8g?si=S-Nn0HyM1h5xJJEu"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </fieldset>
+    <fieldset style="width: 600px;">
+        <!-- Formulário de multi-seleção-->
+        <form onsubmit="" method="get">
+            <label>Nome:</label><input type="text" name=""><br>
+            <label>Cargo:</label>
+            <select name="role">
+                <option value="">Selecione o cargo</option>
+                <option value="gerente">Gerente</option>
+                <option value="diretor">Diretor</option>
+                <option value="presidente">Presidente</option>
+            </select>
+            <br>
+            <label>Assunto:</label><input type="text" name="subject"><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+    <fieldset style="width: 600px;">
+        <label>Mensagem:</label>
+        <textarea rows="2" cols="2" name="message"></textarea>
+        <button type="submit">Enviar</button>
+        <!--Cria um campo de texto que pode ter seu tamanho alterado pelo usuário-->
+        <!--O comando "rows" serve para definir uma quantidade de linhas inicialmente disponiveis nesta tag-->
+        <!--Temos também o comando "cols" que pode ser utilizado dentro da tag textarea para definir a quantidade de colunas inicialmente disponíveis na caixa de mensagem-->
+
+    </fieldset>
+</body>
+
+</html>
