@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset style="width: 600px;">
+        <!-- As tags div e spam são tags para estruturar paginas web pois mão carregam um peso semantico, são utilizados juntamente com css-->
+        <div id="menu-lateral">
+            <div id="links">
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Tag div = delimitar espaço entre itens no html-->
+        <!--Tags do tipo display block ocupam a horizontal completa de onde foram inseridas-->
+    </fieldset>
+    <fieldset style="width: 600px;">
+        <style>
+            span {
+                color: green;
+                font-weight: bold;
+            }
+        </style>
+        <p><span>Dio.</span>me</p>
+        <!--Tag span por padrão não possui estilo block-->
+
+    </fieldset>
+    <fieldset>
+        <style>
+            .row{
+                margin: 5px;
+            }
+            label{
+                width: 100px;
+                text-align: right;
+                display: inline-block;
+                padding-right: 5px;
+            }
+            fieldset{
+                margin: 15px 0;
+                border-radius: 10px;
+                border-color: red;
+                width: 600px;
+            }
+        </style>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label>Nome:</label><input type="text" />
+            <label>E-mail:</label><input type="text" />
+        </div>
+        <div class="row"></div>
+            <label>Profissão:</label><input type="text" />
+            <label>Empresa:</label><input type="text" />
+        </div>
+    </fieldset>
+    <!--Fieldset serve para separação organizada de itens, por exemplo para preencher campos de diferentes informações como um para pessoal e outro para profissional podem ser colocados em fieldsets diferentes-->
+    <!-- embeds  são usados para incluir conteúdo de outros sites como  imagens, vídeos, etc. Era mais utilizada antigamente-->
+     <fieldset style="width: 600px;">
+        <iframe src="https://www.myinstants.com/pt/index/br/" width="600" height="300"></iframe>
+        <!--A  tag iframe é usada para incluir conteúdo de outros sites,  como vídeos, imagens, etc. É a tag que veio a seguir da tag embed-->
+     </fieldset>
+<!--Sobre cores no navegador podemos escolher por nomes ou também pelos seguintes valores:
+RGB: combinação de vermelho, verde e azul
+HEX: combinação de vermelho, verdde e azul porém descrito em hexadecimal
+HSL: Matiz (Hue), Saturação (Saturation) e Iluminação (Lighten). A matiz tem valores onde 0 é vermelho, 120 verde e 240 azul
+RGBA: Mesmo que RGB, porém adicionado canal Alpha (Transparência)
+HSLA: Mesmo que HSL, porém adicionado canla Alpha (Transparência) -->
+
+
+</body>
+
+</html>
