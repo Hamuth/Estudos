@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabela</title>
+    <style>
+        table tr:nth-child(even) {
+            background-color: rebeccapurple;
+        }
+
+        table tr:hover td {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<!--A tag hover  é usada para adicionar um efeito de passagem do mouse sobre um elemento-->
+<!--A tag nth-child(even) é usada para selecionar todos os elementos de índice par-->
+
+
+<body>
+    <table summary="Esta tabela se refere as idades da equipe B" border="1" width="250" cellspacing="10"
+        cellspadding="15" align="center">
+        <!--Cellspacing é o espaço entre as células-->
+        <!--Cellspadding é o espaçamento dentro das células-->
+        <!--Align é para definir qual o alinhamento da tabela, ex: central-->
+        <!--Summary é usado para definir uma descrição,neste caso a tabela se refere as idades da equipe B-->
+        <tr>
+            <th title="Nome completo">Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tbody>
+            <tr id="1">
+                <td>Diogo</td>
+                <td>59</td>
+            </tr>
+            <tr id="2">
+                <td>Jose</td>
+                <td>89</td>
+            </tr>
+            <tr id="3">
+                <td>Virgulino</td>
+                <td>19</td>
+            </tr>
+            <!-- tbody é para definir o corpo da tabela-->
+            <!-- thead é para cabeçalho-->
+            <!--tfoot é para rodapé-->
+            <!-- As tags acima  são usadas para melhorar a acessibilidade, e também ajudam a agrupar as tabelas-->
+            <!--A tag tr significa "linha da tabela"-->
+            <!--A tag td significa "coluna da tabela"-->
+            <!-- A tag th é utilizada para criar o cabeçalho da tabela-->
+        </tbody>
+    </table>
+</body>
+
+</html>
